@@ -1,9 +1,9 @@
 // Criando uma matriz 
 var matriz = [
-    [9, 0, 1]
-    [7, 1, 2]
-    [6, 2, 8]
-    [1, 3, 9]
+    [9, 0, 1],
+    [7, 1, 2],
+    [6, 2, 8],
+    [1, 3, 9],
 ];
 console.table(matriz);
 
@@ -48,6 +48,6 @@ matriz2[2][0] = 30;
 console.table(matriz);
 
 for (let linha = 0; linha < matriz.length; linha++) {
-    for (let coluna  = 0; coluna< matriz[0].length  coluna++) {
+    for (let coluna  = 0; coluna< matriz[0].length;  coluna++) 
     console.log("matriz[", linha, ",", coluna, "] =", matriz[linha][coluna]);
 }

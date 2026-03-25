@@ -32,4 +32,22 @@ for (let i = 0; i < 3; i++) {
 //que multiplique seus elementos por um valor x e imprima
 // a antes e após a multiplicação.
 
-for (let i = 0; i < matriz)
+var matriz2 = [
+    [8, 1, 3], 
+    [2, 9, 1],
+    [4, 6, 2],
+];
+let x = 4
+
+
+console.table(matriz2);
+for (let i = 0; i < matriz2.length; i++) {
+  for (let j = 0; j < matriz2[i].length; j++) {
+    matriz2[i][j] *= x;
+  }
+}
+
+console.table(matriz2);
+
+    
+    
