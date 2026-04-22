@@ -3,35 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de contato</title>
+    <title>Document</title>
 </head>
 <body>
-    <h3>formulário básico</h3>
-    <form method="get">
-        <label>Nome</label>
-        <input type="text" placeholder="digite seu nome..." /> 
+    <h3> Formulário Básico</h3>
+    <form method="get" action="contato.html">
+        <label> Nome </label>
+        <input type="text" name="nome" placeholder="Digite seu Nome..." />
 
-         <input type="submit" value="Enviar" /> <!-- Botão de envio -->
+        <input type="submit" value="Enviar"> <!-- Botão de Envio -->
     </form>
+
     <hr />
-    <h3>Formulario de cadastro</h3>
+    <h3> Formulário de Cadastro </h3>
+
     <form method="get" action="#">
-        <fieldset> 
-            <label for=Nome completo>nomeCompleto</label>
-            <input type="text" nome="nomecompleto"
-             placeholder="Digete seu nome completo" />
+
+        <fieldset>
+
+            <legend>Dados Pessoais</legend>
+
+            <label for="NomeCompleto">Nome Completo</label>
+            <input type="text" name="NomeCompleto" placeholder="Digite seu Nome Completo" />
+            <br />
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="Digite seu E-mail"/>
             <br/>
 
             <label for="cpf">CPF</label>
-            <input type="number"name="cpf"placeholder=Digite seu CPF"/>
+            <input type="number" name="cpf" placeholder="Digite seu CPF"/>
             <br/>
-            
 
-        </fieldset> 
+        </fieldset>
 
-        <button type="subit"
-        <Button type="reset">Limpar dados</Button>
+        <fieldset> 
+            <legend>outras informações</legend>
 
-    </form> 
-</body> 
+            <label for="dataNascimento">Data de cadastro</label> 
+            <input type="datetime" name="dataCadastro" />
+            <br/>
+              
+           <input type="checkbox" name="escolasesi" />
+           <label for="escolasesi">SESI</label>
+
+           <br/>
+
+           <input type="checkbox" name="escolasenai" />
+           <label for="escolasenai">SENAI</label> 
+
+           <br/>
+
+           <input type="radio" name="sexo">
+           <label type="radio">Masculino</label>
+
+           <input type="radio" name="sexo">
+           <label type="radio">feminino</label>
+
+        <input type="radio" name="sexo">
+           <label type="radio">prefiro não informar</label>
+        <br />
+
+        <label for="curso"> Escolha seu curso </label>
+        <select name="curso">
+            <option value="0">HTML</option>
+            <option value="1">CSS</option>
+            <option value="2">javaScript</option>
+        </select>
+
+        <br />
+
+        <label for="comentário">Comentários</label>
+        <textarea name="comentarios"placeholder="digite seu comentário..." rows="10" cols="150"></textarea>
+        
+        </fieldset>
+
+
+        <Button type="submit">Enviar Dados</Button>
+        <Button type="reset">Limpar Dados</Button>
+        
+    </form>
+
+</body>
 </html>
