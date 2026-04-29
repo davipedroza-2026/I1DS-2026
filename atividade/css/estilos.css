@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #ffffffff;
+  background-color: rgb(31, 35, 148);
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 .sidebar {
   width: 220px;
   height: 100dvh;
-  background-color: #1e0083;
+  background-color: #020439;
   color: white;
   padding: 20px;
   position: fixed;
@@ -69,7 +69,7 @@ input {
 }
 
 button {
-  background-color: #567605;
+  background-color: #006dfc;
   color: aliceblue;
   padding: 10px;
   width: 100%;
@@ -81,7 +81,7 @@ button {
 }
 
 button:hover {
-  background-color: #049275;
+  background-color: #3a58dd;
   transform: scale(1.01);
 }
 
